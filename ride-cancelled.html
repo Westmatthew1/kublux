@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kablüx – Ride Cancelled</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f9fafc;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .container {
+        background: #fff;
+        border-radius: 10px;
+        padding: 25px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        width: 90%;
+        max-width: 430px;
+        text-align: center;
+      }
+      .logo {
+        font-weight: 800;
+        font-size: 24px;
+        color: #5b3a00;
+        margin: 10px 20px;
+      }
+      .map {
+        background: url("assets/map.png") center/cover no-repeat;
+        border-radius: 10px 0 0 10px;
+        height: 150px;
+        margin-bottom: 15px;
+      }
+      .cancelled-title {
+        color: #d00000;
+        font-size: 20px;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 8px;
+        margin-bottom: 15px;
+      }
+      .cancelled-title span {
+        font-size: 22px;
+      }
+      .icons {
+        height: 30px;
+      }
+      .ride-details {
+        text-align: left;
+        font-size: 16px;
+        color: #3a3838;
+        margin-bottom: 20px;
+        line-height: 1.8;
+        font-weight: bold;
+      }
+      .status {
+        background:red;
+        color:#eee;
+        font-weight: 600;
+        padding: 15px 35px;
+        border-radius: 5px;
+        display: inline-block;
+        margin-bottom: 20px;
+        width: 50%;
+      }
+
+
+      .driver-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+      .driver-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+      .driver-info h4 {
+        margin: 0;
+        font-size: 16px;
+        color: #333;
+      }
+      .stars {
+        display: flex;
+        justify-content: flex-end;
+        gap: 5px;
+        font-size: 20px;
+        color: #ffcc33;
+      }
+
+      img {
+        height: 30px;
+      }
+      .icons {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        margin-bottom: 8px;
+      }
+
+      .icons img {
+        height: 20px;
+        overflow: visible;
+        margin-top: 4px;
+        color: #ffcc33;
+      }
+.arrow-right::before{
+  display:flex;
+  justify-content: flex-end;
+content: 'See More';
+
+color: #ffcc33;
+}
+
+
+      footer {
+        border-top: 1px solid #eee;
+        margin-top: 25px;
+        padding-top: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #777;
+        background-color: #f3f5ca;
+      }
+      footer a {
+        color: #444;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .social {
+        margin-top: 8px;
+      }
+      .social img {
+        font-size: 18px;
+        margin: 0 5px;
+        color: #ffcc33;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img src="./assets/Frame 177.png" height="30px" alt="" />
+      </div>
+      <div class="map"></div>
+      <div class="cancelled-title">
+        <span class="icons">❌</span> Ride Cancelled
+      </div>
+      <div class="ride-details">
+        <div class="icons">
+          <img src="./assets/Placeholder Icons.svg" alt="location" /> 2 Freedom
+          Ave, Lagos 12347
+        </div>
+        <div class="icons">
+          <img src="./assets/Home Icons.svg" alt="" /> 7 Freedom Ave, Lagos
+          10120
+        </div>
+        <div class="icons">
+          <img src="./assets/Alarm Icons.svg" alt="" /> 9:45 a.m., 21 Oct 2025
+        </div>
+        <div class="icons">
+          <img src="./assets/Business and finance Icons.svg" alt="" /> ₦4,000.00
+          ESP
+        </div>
+        <div class="icons">
+          <img src="./assets/car.png" alt="" /> EXP123 (KBL 007)
+        </div>
+      <div class="arrow-right"></div>
+      </div>
+
+      <div class="status">Cancelled</div>
+      <div class="driver-info">
+        <img src="./assets/driver.jpg" alt="Driver" />
+        <h4>Mr Tola</h4>
+        <div>
+          <div class="stars" id="stars">★★★★★</div>
+        </div>
+      </div>
+      <footer>
+        <a href="#">Help center</a>  <a href="#">Terms</a> 
+        <a href="#">Privacy</a> 
+        <a href="#">Email preference</a>
+        <div class="social"> <img src="./assets/Vector (5).png" alt="Facebook" title="Facebook"> <img src="./assets/mage_instagram-circle.png" alt="Instagram" title="Instagram"> <img src="./assets/Vector (6).png" alt="Twitter" title="Twitter"></div>
+        <p>Ride with us | Kablüx Security Team</p>
+      </footer>
+    </div>
+  </body>
+</html>

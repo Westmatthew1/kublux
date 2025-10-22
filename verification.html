@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kablüx – Verification Code</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f9fafc;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        width: 90%;
+        max-width: 430px;
+        padding: 40px 30px 25px;
+      }
+      .logo {
+        font-weight: 800;
+        font-size: 26px;
+        color: #5b3a00;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+        text-align: center;
+      }
+      img {
+        height: 30px;
+      }
+
+      h2 {
+        font-size: 24px;
+        color: #111;
+        margin: 0 0 20px;
+      }
+      p {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.7;
+        margin: 10px 0;
+      }
+      .code-box {
+        background-color: #f3f5ca;
+
+        display: inline-block;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #333;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+      }
+      .security-icon {
+        width: 100%;
+        height: 55px;
+        border-radius: 50%;
+        background-color: #fff;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin: 15px auto;
+      }
+      .security-icon img {
+        width: 60px;
+        height: 60px;
+      }
+      .security-icon::before {
+        content: "";
+        font-size: 26px;
+        color: #fff;
+      }
+      footer {
+        border-top: 1px solid #eee;
+        margin-top: 25px;
+        padding-top: 15px;
+        font-size: 16px;
+        color: #777;
+        border-radius: 5px;
+        background-color: #f3f5ca;
+        text-align: center;
+      }
+      footer a {
+        color: #444;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .social {
+        margin-top: 8px;
+      }
+      .social img {
+        font-size: 18px;
+        margin: 0 5px;
+        color: #ffcc33;
+      }
+      .timer {
+        color: #0077b6;
+        font-weight: 600;
+      }
+      .warning {
+        color: #cc0000;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">
+        <img src="./assets/Frame 177.png" alt="" />
+      </div>
+      <h2>Hello Moses</h2>
+      <p>Your Verification code is :</p>
+      <div class="code-box" id="code">698-429</div>
+      <p>
+        Your account can’t be accessed without this verification code.<br />
+        If you did not submit, please ignore.
+      </p>
+      <p>
+        This code expires in
+        <span class="timer" id="timer">15:00</span> minutes.
+        <span class="warning">Do not share with anyone.</span>
+      </p>
+      <div class="security-icon">
+        <img src="./assets/Vector (7).png" alt="" />
+      </div>
+      <footer>
+        <a href="#">Help center</a>  <a href="#">Terms</a> 
+        <a href="#">Privacy</a> 
+        <a href="#">Email preference</a>
+        <div class="social">
+          <img src="./assets/Vector (5).png" alt="Facebook" title="Facebook" />
+          <img
+            src="./assets/mage_instagram-circle.png"
+            alt="Instagram"
+            title="Instagram"
+          />
+          <img src="./assets/Vector (6).png" alt="Twitter" title="Twitter" />
+        </div>
+        <p>Ride with us | Kablüx Security Team</p>
+      </footer>
+    </div>
+    <script>
+      let time = 15 * 60;
+      const timerDisplay = document.getElementById("timer");
+      function updateTimer() {
+        const minutes = Math.floor(time / 60);
+        const seconds = time % 60;
+        timerDisplay.textContent = `${String(minutes).padStart(
+          2,
+          "0"
+        )}:${String(seconds).padStart(2, "0")}`;
+        if (time > 0) time--;
+      }
+      setInterval(updateTimer, 1000);
+    </script>
+  </body>
+</html>

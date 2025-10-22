@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Action Required - Kablux</title>
+
+<style>
+  body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    padding: 40px 25px;
+    max-width: 420px;
+    width: 100%;
+ }
+
+  .logo {
+    font-size: 22px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 15px;
+  text-align: center;}
+  h2 {
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .highlight {
+    color: #f6b400;
+  }
+
+  .red {
+    color: red;
+  }
+  .btn {
+    background: #000;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    text-align: center;
+    
+
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .phone-img{
+    height: 90px;
+  }
+  img{
+    height: 30px;
+  }
+
+  .btn:hover {
+    background: #f6b400;
+    color: #000;
+  }
+
+  .note {
+    font-size: 14px;
+    text-align: left;
+    margin: 15px 0;
+  }
+
+  .note span {
+    color: #f6b400;
+  }
+
+  .phone-img {
+    width: 150px;
+    margin: 20px auto;
+  }
+footer {
+        border-top: 1px solid #eee;
+        margin-top: 25px;
+        padding-top: 15px;
+        font-size: 16px;
+        color: #777;
+        border-radius: 5px;
+        background-color: #f3f5ca;
+        text-align: center;
+      }
+      footer a {
+        color: #444;
+        text-decoration: none;
+        margin: 0 5px;
+        
+      }
+      .social {
+        margin-top: 8px;
+      }
+      .social img {
+        font-size: 18px;
+        margin: 0 5px;
+        color: #ffcc33;
+      }</style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="logo"><img src="./assets/Frame 177.png" alt=""></div>
+    <h2>Account <span class="red">Action</span> <br>Required</h2>
+    <p>Hello Moses,</p>
+    <p>We’ve detected that your <span class="highlight">Kablux</span> account requires your action because some of your documents are no longer valid or incomplete.</p><div class="div-btn">
+  <button class="btn" id="getStarted">Get Started</button>
+</div>
+    <p class="note">⚠️ Please upload the required documents from the partner portal to continue driving.</p>
+    <img src="./assets/iPhone 16.png" alt="Phone" class="phone-img"><img src="./assets/iPhone 16.png" class="phone-img" alt="">
+    <p style="font-size: 13px;">If you have questions, contact our support team <span>24/7</span>.</p>
+
+      <footer>
+        <a href="#">Help center</a>  <a href="#">Terms</a> 
+        <a href="#">Privacy</a> 
+        <a href="#">Email preference</a>
+        <div class="social">
+          <img src="./assets/Vector (5).png" alt="Facebook" title="Facebook" />
+          <img
+            src="./assets/mage_instagram-circle.png"
+            alt="Instagram"
+            title="Instagram"
+          />
+          <img src="./assets/Vector (6).png" alt="Twitter" title="Twitter" />
+        </div>
+        <p>Ride with us | Kablüx Security Team</p>
+      </footer>
+   </div>
+
+  <script>
+    document.getElementById('getStarted').addEventListener('click', () => {
+      alert('Redirecting to document upload page...');
+    });
+  </script>
+</body>
+</html>

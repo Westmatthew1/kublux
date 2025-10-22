@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kablüx – Verification Successful</title>
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f9fafc;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      img {
+        height: 30px;
+      }
+
+      .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        width: 90%;
+        max-width: 430px;
+        padding: 40px 30px 25px;
+        text-align: center;
+      }
+      .logo {
+        font-weight: 800;
+        font-size: 26px;
+        color: #5b3a00;
+        letter-spacing: 0.5px;
+        margin-bottom: 25px;
+      }
+
+      .success-icon {
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        background-color: #e6ffea;
+        border: 3px solid #00b300;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 20px;
+        position: relative;
+      }
+      .success-icon::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 45px;
+        border-right: 4px solid #00b300;
+        border-bottom: 4px solid #00b300;
+        transform: rotate(45deg);
+        top: 20px;
+        left: 32px;
+        animation: checkmark 0.7s ease forwards;
+      }
+      @keyframes checkmark {
+        0% {
+          transform: scale(0) rotate(45deg);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2) rotate(45deg);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1) rotate(45deg);
+        }
+      }
+      h2 {
+        font-size: 24px;
+        color: #111;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        color: #444;
+        line-height: 1.7;
+        margin: 8px 0 15px;
+      }
+      .highlight {
+        color: #00b300;
+        font-weight: 600;
+      }
+      .btn {
+        display: inline-block;
+        background-color: #00b300;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        transition: 0.3s;
+        margin-top: 10px;
+      }
+      .btn:hover {
+        background-color: #009900;
+      }
+      footer {
+        border-top: 1px solid #eee;
+        margin-top: 25px;
+        padding-top: 15px;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #777;
+        background-color: #f3f5ca;
+      }
+      footer a {
+        color: #444;
+        text-decoration: none;
+        margin: 0 5px;
+      }
+      .social {
+        margin-top: 8px;
+      }
+      .social img {
+        font-size: 18px;
+        margin: 0 5px;
+        color: #ffcc33;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo">
+        <img src="./assets/Frame 177.png" alt="" />
+      </div>
+      <div class="success-icon"></div>
+      <h2>Verification Successful 🎉</h2>
+      <p>
+        Your account has been successfully verified.<br />
+        You can now continue to your <span class="highlight">dashboard</span> or
+        login to your account.
+      </p>
+      <a href="#" class="btn" id="continueBtn">Continue</a>
+
+      <footer>
+        <a href="#">Help center</a>  <a href="#">Terms</a> 
+        <a href="#">Privacy</a> 
+        <a href="#">Email preference</a>
+        <div class="social">
+          <img src="./assets/Vector (5).png" alt="Facebook" title="Facebook" />
+          <img
+            src="./assets/mage_instagram-circle.png"
+            alt="Instagram"
+            title="Instagram"
+          />
+          <img src="./assets/Vector (6).png" alt="Twitter" title="Twitter" />
+        </div>
+        <p>Ride with us | Kablüx Security Team</p>
+      </footer>
+    </div>
+  </body>
+</html>
